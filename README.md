@@ -10,7 +10,7 @@ https://github.com/Dwaynew85/fortnite_store.git
 
 # Once Frontend is cloned
 
-Run npm install in frontend directory
+Run ```npm install``` in frontend directory
 
 # With Frontend Set Up
 
