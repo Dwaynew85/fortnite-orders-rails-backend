@@ -14,15 +14,15 @@ Run ```npm install``` in frontend directory
 
 # With Frontend Set Up
 
-cd into Fortnite Orders folder and run bundler
+```cd``` into Fortnite Orders folder and ```run bundler```
 
 # Once Frontend and Backend are ready
 
-run rails s to start backend server on http://localhost:3001/
+run ```rails s``` to start backend server on http://localhost:3001/
 
 # Followed by running backend server
 
-cd back into Fortnite Store frontend folder and run npm start
+``cd`` back into Fortnite Store frontend folder and run ```npm start```
 
 # You're All Set! 
 
