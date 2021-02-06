@@ -2,7 +2,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
   def change
     create_table :items do |t|
       t.string :name
-      t.text :pic_url
+      t.text :icon
       t.integer :price
 
       t.timestamps
