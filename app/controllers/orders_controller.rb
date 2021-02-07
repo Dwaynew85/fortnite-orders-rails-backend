@@ -1,7 +1,16 @@
 class OrdersController < ApplicationController
+
+    def index
+        @orders = Order.all
+    end
+    
     def create
-        user_params
-        order_params
+        @user = User.find_or_create_by(user_params)
+        @order = Order.create(total: order_params[:total])
+        @order.user = @user
+        @items = Item.set_items(order_params[:items])
+        @order.items = @items
+        @order.save
         byebug
     end
 
