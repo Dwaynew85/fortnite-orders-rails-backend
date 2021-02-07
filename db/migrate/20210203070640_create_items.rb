@@ -1,9 +1,10 @@
 class CreateItems < ActiveRecord::Migration[6.0]
   def change
     create_table :items do |t|
+      t.integer :order_id
       t.string :name
+      t.integer :cost
       t.text :icon
-      t.integer :price
 
       t.timestamps
     end

@@ -13,20 +13,19 @@
 ActiveRecord::Schema.define(version: 2021_02_03_071336) do
 
   create_table "items", force: :cascade do |t|
+    t.integer "order_id"
     t.string "name"
-    t.text "pic_url"
-    t.integer "price"
+    t.integer "cost"
+    t.text "icon"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "orders", force: :cascade do |t|
-    t.integer "user_id", null: false
-    t.integer "item_id", null: false
+    t.integer "user_id"
     t.integer "total"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
-    t.index ["item_id"], name: "index_orders_on_item_id"
     t.index ["user_id"], name: "index_orders_on_user_id"
   end
 
@@ -39,6 +38,5 @@ ActiveRecord::Schema.define(version: 2021_02_03_071336) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
-  add_foreign_key "orders", "items"
   add_foreign_key "orders", "users"
 end
