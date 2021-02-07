@@ -1,9 +1,17 @@
 class OrdersController < ApplicationController
 
     def index
-        @orders = Order.all
+        orders = Order.all
+
+        render json: orders
     end
-    
+
+    def show
+        order = Order.find(params[:id])
+
+        render json: (order)
+    end
+
     def create
         @user = User.find_or_create_by(user_params)
         @order = Order.create(total: order_params[:total])
