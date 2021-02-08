@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 2021_02_03_071336) do
   create_table "orders", force: :cascade do |t|
     t.integer "user_id"
     t.integer "total"
+    t.integer "item_id"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_orders_on_user_id"
