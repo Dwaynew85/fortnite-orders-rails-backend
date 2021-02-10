@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 2021_02_03_071336) do
     t.integer "order_id"
     t.string "name"
     t.integer "cost"
-    t.text "icon"
+    t.string "icon"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

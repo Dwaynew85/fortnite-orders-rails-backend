@@ -4,7 +4,7 @@ class CreateItems < ActiveRecord::Migration[6.0]
       t.integer :order_id
       t.string :name
       t.integer :cost
-      t.text :icon
+      t.string :icon
 
       t.timestamps
     end
