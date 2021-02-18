@@ -1,6 +1,6 @@
 # README
 
-A Fortnite Orders backend that works in conjunction with Fortnite Store React Frontend.
+A Fortnite Orders backend API that works in conjunction with Fortnite Store React Frontend.
 
 # BEFORE USE
 
@@ -26,4 +26,4 @@ run ```rails s``` to start backend server on http://localhost:3001/
 
 # You're All Set! 
 
-Now you can navigate through Fornite Store. Adding through your cart, which will save to the backend once you submit the form.
+Now you can navigate through Fornite Store. Adding to your cart, which will save to the backend once you submit the order form.
